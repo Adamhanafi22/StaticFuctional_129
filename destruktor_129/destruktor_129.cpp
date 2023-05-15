@@ -36,3 +36,9 @@ void angka::isidata() {
 	cout << endl;
 
 }
+int main() {
+	angka belajarcpp(3);
+	angka* ptrbelajarcpp = new angka(5);
+	delete ptrbelajarcpp;
+	return 0;
+}
