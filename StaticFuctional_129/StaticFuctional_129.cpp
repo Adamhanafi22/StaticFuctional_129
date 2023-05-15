@@ -8,4 +8,4 @@ public:
 	int id;
 	string nama;
 
-};
+}; 
