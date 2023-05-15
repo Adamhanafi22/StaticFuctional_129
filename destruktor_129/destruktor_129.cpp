@@ -11,3 +11,15 @@ public:
 	void cetakdata();
 	void isidata();
 };
+angka::angka(int i) {
+	panjang = i;
+	arr = new int[i];
+	isidata();
+}
+angka::angka() {
+	cout << endl;
+	cetakdata();
+	delete[]arr;
+	cout << "Alamat array sudah dilepaskan" << endl;
+
+}
