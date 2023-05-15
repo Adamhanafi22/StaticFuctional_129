@@ -17,4 +17,9 @@ public:
 
 } bukunya;
 
-in
+int main()
+{
+
+	cout << bukunya.setJudul("matematika").getJudul();
+	return 0;
+}
