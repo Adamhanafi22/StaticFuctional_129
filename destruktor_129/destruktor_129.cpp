@@ -4,7 +4,7 @@ using namespace std;
 class angka {
 private:
 	int* arr;
-	int panjanag;
+	int panjang;
 public:
 	angka(int);
 	angka();
@@ -21,5 +21,18 @@ angka::angka() {
 	cetakdata();
 	delete[]arr;
 	cout << "Alamat array sudah dilepaskan" << endl;
+
+}
+void angka::cetakdata() {
+	for (int i = 1;i <= panjang;i++) {
+		cout << i << "=" << arr[i] << endl;
+
+	}
+}
+void angka::isidata() {
+	for (int i = 1;i <= panjang;i++) {
+		cout << i << "=";cin >> arr[i];
+	}
+	cout << endl;
 
 }
